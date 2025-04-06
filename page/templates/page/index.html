@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Page</title>
+    <link rel="icon" type="image/png" href="{% static 'images/person.svg' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body style="background-color: #212830;">
-    {% load static %}
 
     <!-- Banner -->
     <img style="width: 100%; height: auto; padding-bottom: 20px;" src="{% static 'images/space.jpg' %}"
@@ -47,11 +48,11 @@
         <hr style="color: #d7d7d7; margin-top: 0;">
 
         <p align="center">
-            <img width="100" style="padding-inline: 5px; border-radius: 12%;" src="{% static 'images/django.jpg' %}"
+            <img height="40" style="padding-inline: 5px; border-radius: 12%;" src="{% static 'images/django.jpg' %}"
                 alt="django" title="Django" />
-            <img width="100" style="padding-inline: 5px; border-radius: 12%;" src="{% static 'images/symfony.jpg' %}"
+            <img height="40" style="padding-inline: 5px; border-radius: 12%;" src="{% static 'images/symfony.jpg' %}"
                 alt="symfony" title="Symfony" />
-            <img width="100" style="padding-inline: 5px; border-radius: 12%;" src="{% static 'images/vue.jpg' %}"
+            <img height="40" style="padding-inline: 5px; border-radius: 12%;" src="{% static 'images/vue.jpg' %}"
                 alt="symfony" title="Symfony" />
         </p>
 
